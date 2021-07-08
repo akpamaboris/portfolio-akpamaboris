@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+/* IMPORT THE ROBOTO POLICE */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+/* IMPORT THE ROBOTO POLICE */
+/*APPLY THE FONT TO THE WHOLE BODY*/
+body {
+  font-family: "Roboto";
+  background-color: #e2e376;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*APPLY THE FONT TO THE WHOLE BODY*/
+.header {
+  background-color: #4a8e6b;
+  height: 100px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: "space-between";
+  font-size: 20px;
+}
+.footer {
+  background-color: #4a8e6b;
+  height: 100px;
+  display: flex;
+  justify-content: "space-between";
+  font-size: 20px;
+}
+
+.headerTitle {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+/* FOR ALL THE CARDS */
+.portfolio-place {
+  width: 1200px;
+  margin: 0 auto;
+  height: 800px;
+  margin-top: 50px;
+}
+.containerPortfolioCard {
+  display: flex;
+}
+
+.cardPortfolio {
+  margin-left: 100px;
+  height: 300px;
+  width: 400px;
+  background: #729862;
+  margin-top: 20px;
+  color: #d7edb2;
+  font-weight: bold;
+}
+.cardPortfolio a {
+  text-decoration: none; /* no underline */
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.cardTitle {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.cardCaroussel {
+  width: 120px;
+  height: 130px;
+  object-fit: contain;
+}
+
+.cardDescription {
+  text-align: center;
+  font-size: 12px;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+/* FOR ALL THE CARDS */
+
+/* RESPONSIVE */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 900px) {
+  /* Rules */
+  .cardPortfolio {
+    margin-left: 100px;
+    height: 300px;
+    width: 400px;
+    background: #729862;
+    margin-top: 20px;
+    color: #d7edb2;
+    font-weight: bold;
   }
-  to {
-    transform: rotate(360deg);
+  .containerPortfolioCard {
+    display: block;
+  }
+  .footer {
+    display: none;
   }
 }
